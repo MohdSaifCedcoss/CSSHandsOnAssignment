@@ -652,5 +652,32 @@
           /* Only change code above this line */
         }
       </style>
+
+
+
+      <!--Change a variable for a specific area-->
+      <style>
+          :root {
+            --penguin-skin: gray;
+            --penguin-belly: pink;
+            --penguin-beak: orange;
+          }
+      
+          body {
+            background: var(--penguin-belly, #c6faf1);
+          }
+      
+          .penguin {
+            /* Only change code below this line */      
+              --penguin-belly:white;
+            /* Only change code above this line */
+            position: relative;
+            margin: auto;
+            display: block;
+            margin-top: 5%;
+            width: 300px;
+            height: 300px;
+          }
+        </style>
   </body>
 </html>
