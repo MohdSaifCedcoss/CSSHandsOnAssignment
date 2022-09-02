@@ -679,5 +679,27 @@
             height: 300px;
           }
         </style>
+
+
+
+
+   <!-- Use a media query to change a variable -->
+   <style>
+    :root {
+      --penguin-size: 300px;
+      --penguin-skin: gray;
+      --penguin-belly: white;
+      --penguin-beak: orange;
+    }
+  
+    @media (max-width: 350px) {
+      :root {
+        /* Only change code below this line */
+        --penguin-size:200px;
+        --penguin-skin:black;
+        /* Only change code above this line */
+      }
+    }
+    </style>
   </body>
 </html>
