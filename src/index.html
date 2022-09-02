@@ -624,5 +624,22 @@
           border-radius: 70% 70% 100% 100%;
         }
     </style>
+
+
+
+
+    <!-- Improve Compatibility with Browser Fallbacks -->
+    <style>
+        :root {
+          --red-color: red;
+        }
+        .red-box {
+          background:red;
+          background: var(--red-color);
+          height: 200px;
+          width:200px;
+        }
+      </style>
+      <div class="red-box"></div>
   </body>
 </html>
